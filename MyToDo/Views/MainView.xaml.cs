@@ -28,6 +28,10 @@ namespace MyToDo.Views
             btnMax.Click += BtnMax_Click;
             ColorZone.MouseDoubleClick += ColorZone_MouseDoubleClick;
             ColorZone.MouseMove += ColorZone_MouseMove;
+            menuBar.SelectionChanged += (s, e) =>
+            {
+                drawerHost.IsLeftDrawerOpen = false;
+            };
         }
 
         private void ColorZone_MouseMove(object sender, MouseEventArgs e)
