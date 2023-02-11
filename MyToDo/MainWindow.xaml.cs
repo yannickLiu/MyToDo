@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialDesignThemes.Wpf;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,44 @@ namespace MyToDo
         public MainWindow()
         {
             InitializeComponent();
+            btnMin.Click += (s, e) => { this.WindowState = WindowState.Minimized; };
+            btnMax.Click += (s, e) =>
+            {
+                if (this.WindowState == WindowState.Maximized)
+                {
+                    this.WindowState = WindowState.Normal;
+                }
+                else
+                {
+                    this.WindowState = WindowState.Maximized;
+                }
+            };
+            btnClose.Click += (s, e) =>
+            {
+                this.Close();
+            };
+            ColorZone.MouseMove += ColorZone_MouseMove;
+            ColorZone.MouseDoubleClick += ColorZone_MouseDoubleClick;
+        }
+
+        private void ColorZone_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (this.WindowState == WindowState.Maximized)
+            {
+                this.WindowState = WindowState.Normal;
+            }
+            else
+            {
+                this.WindowState = WindowState.Maximized;
+            }
+        }
+
+        private void ColorZone_MouseMove(object sender, MouseEventArgs e)
+        {
+            if(e.LeftButton == MouseButtonState.Pressed)
+            {
+                this.DragMove();
+            }
         }
     }
 }

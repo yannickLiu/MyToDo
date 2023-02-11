@@ -5,7 +5,9 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyToDo", "MyToDo\MyToDo.csproj", "{F74A40B4-87B6-4B9B-B036-241116107943}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismApp", "PrismApp\PrismApp.csproj", "{FB7E0CA3-8F95-4FCE-A513-307E1D0123ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrismApp", "PrismApp\PrismApp.csproj", "{FB7E0CA3-8F95-4FCE-A513-307E1D0123ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyToDo.Api", "MyToDo.Api\MyToDo.Api.csproj", "{D469D903-09AE-4381-A71D-864583CB1E5F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{FB7E0CA3-8F95-4FCE-A513-307E1D0123ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB7E0CA3-8F95-4FCE-A513-307E1D0123ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB7E0CA3-8F95-4FCE-A513-307E1D0123ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D469D903-09AE-4381-A71D-864583CB1E5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D469D903-09AE-4381-A71D-864583CB1E5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D469D903-09AE-4381-A71D-864583CB1E5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D469D903-09AE-4381-A71D-864583CB1E5F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
